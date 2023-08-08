@@ -12,43 +12,53 @@
 <body>
     <main>
         <h1>Proximos posts</h1>
+
         <div id="postForm">
-            <label for="">titulo</label>
-            <input type="text" id="title" name="title" required>
 
-            <br>
-            <br>
-
-
-            <div id="category">
-                <label for="">categotias</label>
-                <input type="text" id="category" name="category" required>
-
-            </div>
-            <br>
-            <br>
             <div>
-                <label for="">Resumo</label>
+                <label for="title">titulo</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div>
+                <label for="category">categotias</label>
+                <input type="text" id="category" name="category" required/>
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+                <label for="resume">Resumo</label>
                 <textarea type="text" id="resume" name="resume" rows="4" required></textarea>
             </div>
+
             <br>
             <br>
+
             <div>
-                <label for="">autor</label>
-                <input type="text" id="autor" name="autor" required>
-            </div>
-            <br>
-            <br>
-            <div>
-                <label for="">data de publicação</label>
-                <input type="date" id="date" name="date" required>
+                <label for="author">autor</label>
+                <input type="text" id="author" name="author" required/>
             </div>
 
-            <button type="button" onclick="">cadastrar</button>
+            <br>
+            <br>
+
+            <div>
+                <label for="date">data de publicação</label>
+                <input type="date" id="date" name="date" required/>
+            </div>
+
+            <button type="button" onclick="savePost()">cadastrar</button>
 
         </div>
 
 
+        <div id="list" class="hidden"></div>
 
     </main>
 
